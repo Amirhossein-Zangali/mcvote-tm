@@ -1,0 +1,621 @@
+<!doctype html>
+
+<html lang="fa" class=" layout-navbar-fixed layout-menu-fixed layout-compact " dir="rtl" data-skin="default"
+    data-bs-theme="dark" data-assets-path="../assets/" data-template="vertical-menu-template">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>ادمین - داشبورد</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+
+    <link rel="stylesheet" href="../assets/vendor/fonts/iconify-icons.css" />
+
+    <link rel="stylesheet" href="../assets/css/fonts.css" />
+    <link rel="stylesheet" href="../assets/vendor/css/core.css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+    <!-- Helpers -->
+    <script src="../assets/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+
+
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../assets/js/config.js"></script>
+
+</head>
+
+<body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar  ">
+        <div class="layout-container">
+            <!-- Menu -->
+
+            <aside id="layout-menu" class="layout-menu menu-vertical menu">
+                <div class="app-brand demo ">
+                    <a href="dashboard.html" class="app-brand-link">
+                        <span class="app-brand-logo demo">
+                            <span class="text-primary">
+                                <svg width="32" height="22" viewBox="0 0 32 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z"
+                                        fill="currentColor" />
+                                    <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z"
+                                        fill="#161616" />
+                                    <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z"
+                                        fill="#161616" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </span>
+                        </span>
+                        <span class="app-brand-text demo menu-text fw-bold ms-3">پنل ادمین</span>
+                    </a>
+
+                    <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
+                        <i class="icon-base ti menu-toggle-icon d-none d-xl-block"></i>
+                        <i class="icon-base ti tabler-x d-block d-xl-none"></i>
+                    </a>
+                </div>
+
+                <div class="menu-inner-shadow"></div>
+
+                <ul class="menu-inner py-1">
+                    <li class="menu-item active">
+                        <a href="dashboard.html" class="menu-link">
+                            <i class="menu-icon icon-base ti tabler-smart-home"></i>
+                            <div data-i18n="داشبورد">داشبورد</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                            <i class="menu-icon icon-base ti tabler-brand-tabler"></i>
+                            <div data-i18n="سرور ها">سرور ها</div>
+                            <div class="badge text-bg-success rounded-pill ms-auto">5</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="servers/index.html" class="menu-link">
+                                    <div data-i18n="لیست سرور ها">لیست سرور ها</div>
+                                    <div class="badge text-bg-success rounded-pill ms-auto">5</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="servers/create.html" class="menu-link">
+                                    <div data-i18n="ایجاد سرور">ایجاد سرور</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                            <i class="menu-icon icon-base ti tabler-users"></i>
+                            <div data-i18n="کاربران">کاربران</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="users/index.html" class="menu-link">
+                                    <div data-i18n="لیست کاربران">لیست کاربران</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="users/create.html" class="menu-link">
+                                    <div data-i18n="ایجاد کاربر">ایجاد کاربر</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="reports/index.html" class="menu-link">
+                            <i class="menu-icon icon-base ti tabler-alert-triangle"></i>
+                            <div data-i18n="گزارش و تخلفات">گزارش و تخلفات</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="settings/index.html" class="menu-link">
+                            <i class="menu-icon icon-base ti tabler-settings"></i>
+                            <div data-i18n="تنظیمات">تنظیمات</div>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+
+            <div class="menu-mobile-toggler d-xl-none rounded-1">
+                <a href="javascript:void(0);"
+                    class="layout-menu-toggle menu-link text-large text-bg-secondary p-2 rounded-1">
+                    <i class="ti tabler-menu icon-base"></i>
+                    <i class="ti tabler-chevron-right icon-base"></i>
+                </a>
+            </div>
+            <!-- / Menu -->
+
+            <!-- Layout container -->
+            <div class="layout-page">
+                <!-- Navbar -->
+
+                <nav class="layout-navbar container-xxl navbar-detached navbar navbar-expand-xl align-items-center bg-navbar-theme"
+                    id="layout-navbar">
+                    <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0   d-xl-none ">
+                        <a class="nav-item nav-link px-0 me-xl-6" href="javascript:void(0)">
+                            <i class="icon-base ti tabler-menu-2 icon-md"></i>
+                        </a>
+                    </div>
+
+                    <div class="navbar-nav-right d-flex align-items-center justify-content-end" id="navbar-collapse">
+                        <ul class="navbar-nav flex-row align-items-center ms-md-auto">
+
+                            <!-- Style Switcher -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle hide-arrow btn btn-icon btn-text-secondary rounded-pill"
+                                    id="nav-theme" href="javascript:void(0);" data-bs-toggle="dropdown">
+                                    <i class="icon-base ti tabler-sun icon-22px theme-icon-active text-heading"></i>
+                                    <span class="d-none ms-2" id="nav-theme-text">تغییر حالت</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-theme-text">
+                                    <li>
+                                        <button type="button" class="dropdown-item align-items-center active"
+                                            data-bs-theme-value="light" aria-pressed="false">
+                                            <span><i class="icon-base ti tabler-sun icon-22px me-3"
+                                                    data-icon="sun"></i>روشن</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="dropdown-item align-items-center"
+                                            data-bs-theme-value="dark" aria-pressed="true">
+                                            <span><i class="icon-base ti tabler-moon-stars icon-22px me-3"
+                                                    data-icon="moon-stars"></i>تاریک</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="dropdown-item align-items-center"
+                                            data-bs-theme-value="system" aria-pressed="false">
+                                            <span><i class="icon-base ti tabler-device-desktop-analytics icon-22px me-3"
+                                                    data-icon="device-desktop-analytics"></i>سیستم</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- / Style Switcher-->
+
+                            <!-- User -->
+                            <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                                <a class="nav-link dropdown-toggle hide-arrow p-0" href="javascript:void(0);"
+                                    data-bs-toggle="dropdown">
+                                    <div class="avatar avatar-online">
+                                        <img src="../assets/img/avatars/1.png" alt class="rounded-circle" />
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <a class="dropdown-item mt-0" href="pages-account-settings-account.html">
+                                            <div class="d-flex align-items-center">
+                                                <div class="flex-shrink-0 me-2">
+                                                    <div class="avatar avatar-online">
+                                                        <img src="../assets/img/avatars/1.png" alt
+                                                            class="rounded-circle" />
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-0">امیرحسین</h6>
+                                                    <small class="text-body-secondary">برنامه نویس</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown-divider my-1 mx-n2"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="pages-profile-user.html">
+                                            <i class="icon-base ti tabler-user me-3 icon-md"></i><span
+                                                class="align-middle">پروفایل من</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="pages-account-settings-account.html">
+                                            <i class="icon-base ti tabler-settings me-3 icon-md"></i><span
+                                                class="align-middle">تنظیمات</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="d-grid px-2 pt-2 pb-1">
+                                            <a class="btn btn-sm btn-danger d-flex" href="auth-login-cover.html"
+                                                target="_blank">
+                                                <i class="icon-base ti tabler-logout me-2 icon-14px"></i>
+                                                <small class="align-middle">خروج</small>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!--/ User -->
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- / Navbar -->
+
+                <!-- Content wrapper -->
+                <div class="content-wrapper">
+                    <!-- Content -->
+                    <div class="container-xxl flex-grow-1 container-p-y">
+                        <div class="row g-6">
+                            <!-- Card Border Shadow -->
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="card card-border-shadow-primary h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <div class="avatar me-4">
+                                                <span class="avatar-initial rounded bg-label-primary"><i
+                                                        class="icon-base ti tabler-truck icon-28px"></i></span>
+                                            </div>
+                                            <h4 class="mb-0">128</h4>
+                                        </div>
+                                        <p class="mb-1">سرور های فعال</p>
+                                        <p class="mb-0">
+                                            <span class="text-heading fw-medium me-2">+12</span>
+                                            <small class="text-body-secondary">سرور در 7 روز اخیر</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="card card-border-shadow-warning h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <div class="avatar me-4">
+                                                <span class="avatar-initial rounded bg-label-warning"><i
+                                                        class="icon-base ti tabler-alert-triangle icon-28px"></i></span>
+                                            </div>
+                                            <h4 class="mb-0">5420</h4>
+                                        </div>
+                                        <p class="mb-1">کاربران ثبت شده</p>
+                                        <p class="mb-0">
+                                            <span class="text-heading fw-medium me-2">+320</span>
+                                            <small class="text-body-secondary">کاربر جدید</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="card card-border-shadow-danger h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <div class="avatar me-4">
+                                                <span class="avatar-initial rounded bg-label-danger"><i
+                                                        class="icon-base ti tabler-git-fork icon-28px"></i></span>
+                                            </div>
+                                            <h4 class="mb-0">2310</h4>
+                                        </div>
+                                        <p class="mb-1">رأی های امروز</p>
+                                        <p class="mb-0">
+                                            <span class="text-heading fw-medium me-2">18%</span>
+                                            <small class="text-body-secondary">رشد</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="card card-border-shadow-info h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <div class="avatar me-4">
+                                                <span class="avatar-initial rounded bg-label-info"><i
+                                                        class="icon-base ti tabler-clock icon-28px"></i></span>
+                                            </div>
+                                            <h4 class="mb-0">7</h4>
+                                        </div>
+                                        <p class="mb-1">گزارش های باز</p>
+                                        <p class="mb-0">
+                                            <span class="text-heading fw-medium me-2">3</span>
+                                            <small class="text-body-secondary">گزارش فوری</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/ Card Border Shadow -->
+
+                            <!-- On route vehicles Table -->
+                            <div class="col-xxl-8">
+                                <div class="card">
+                                    <div class="card-header d-flex align-items-center justify-content-between">
+                                        <div class="card-title mb-0">
+                                            <h5 class="m-0 me-2">سرور های در انتظار تایید</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-datatable border-top">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>نام سرور</th>
+                                                        <th>مالک</th>
+                                                        <th>تاریخ ثبت</th>
+                                                        <th>وضعیت</th>
+                                                        <th>عملیات</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span class="fw-medium">GalaxyCraft</span></td>
+                                                        <td>@AriaDev</td>
+                                                        <td>1403/01/09</td>
+                                                        <td><span class="badge bg-label-warning me-1">در انتظار
+                                                                بررسی</span></td>
+                                                        <td>
+                                                            <button type="button"
+                                                                class="btn btn-outline-success btn-sm">تایید</button>
+                                                            <button type="button"
+                                                                class="btn btn-outline-danger btn-sm">رد</button>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><span class="fw-medium">IrMine Pro</span></td>
+                                                        <td>@Mehdi</td>
+                                                        <td>1403/01/08</td>
+                                                        <td><span class="badge bg-label-info me-1">نیاز به اصلاح</span>
+                                                        </td>
+                                                        <td>
+                                                            <button type="button"
+                                                                class="btn btn-outline-info btn-sm">جزئیات</button>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><span class="fw-medium">SkyBlock IR</span></td>
+                                                        <td>@Nima</td>
+                                                        <td>1403/01/08</td>
+                                                        <td><span class="badge bg-label-warning me-1">در انتظار
+                                                                بررسی</span></td>
+                                                        <td>
+                                                            <button type="button"
+                                                                class="btn btn-outline-success btn-sm">تایید</button>
+                                                            <button type="button"
+                                                                class="btn btn-outline-danger btn-sm">رد</button>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><span class="fw-medium">PixelWorld</span></td>
+                                                        <td>@Sam</td>
+                                                        <td>1403/01/07</td>
+                                                        <td><span class="badge bg-label-warning me-1">در انتظار
+                                                                بررسی</span></td>
+                                                        <td>
+                                                            <button type="button"
+                                                                class="btn btn-outline-success btn-sm">تایید</button>
+                                                            <button type="button"
+                                                                class="btn btn-outline-danger btn-sm">رد</button>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><span class="fw-medium">CraftArena</span></td>
+                                                        <td>@Pouya</td>
+                                                        <td>1403/01/07</td>
+                                                        <td><span class="badge bg-label-warning me-1">در انتظار
+                                                                بررسی</span></td>
+                                                        <td>
+                                                            <button type="button"
+                                                                class="btn btn-outline-success btn-sm">تایید</button>
+                                                            <button type="button"
+                                                                class="btn btn-outline-danger btn-sm">رد</button>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><span class="fw-medium">PersiaCraft</span></td>
+                                                        <td>@Ali</td>
+                                                        <td>1403/01/06</td>
+                                                        <td><span class="badge bg-label-info me-1">نیاز به اصلاح</span>
+                                                        </td>
+                                                        <td>
+                                                            <button type="button"
+                                                                class="btn btn-outline-info btn-sm">جزئیات</button>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><span class="fw-medium">NetherZone</span></td>
+                                                        <td>@Sina</td>
+                                                        <td>1403/01/06</td>
+                                                        <td><span class="badge bg-label-warning me-1">در انتظار
+                                                                بررسی</span></td>
+                                                        <td>
+                                                            <button type="button"
+                                                                class="btn btn-outline-success btn-sm">تایید</button>
+                                                            <button type="button"
+                                                                class="btn btn-outline-danger btn-sm">رد</button>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><span class="fw-medium">PersiaZone</span></td>
+                                                        <td>@Amir</td>
+                                                        <td>1403/02/06</td>
+                                                        <td><span class="badge bg-label-warning me-1">در انتظار
+                                                                بررسی</span></td>
+                                                        <td>
+                                                            <button type="button"
+                                                                class="btn btn-outline-success btn-sm">تایید</button>
+                                                            <button type="button"
+                                                                class="btn btn-outline-danger btn-sm">رد</button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/ On route vehicles Table -->
+
+                            <!-- Delivery Performance -->
+                            <div class="col-xxl-4 col-lg-5">
+                                <div class="card h-100">
+                                    <div class="card-header d-flex justify-content-between">
+                                        <div class="card-title mb-0">
+                                            <h5 class="mb-1 me-2">آخرین مدیران ثبت شده</h5>
+                                            <p class="card-subtitle">12% رشد در این ماه</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="p-0 m-0">
+                                            <li class="d-flex mb-6 align-items-center">
+                                                <div class="avatar flex-shrink-0 me-4">
+                                                    <span class="avatar-initial rounded bg-label-primary"><i
+                                                            class="icon-base ti tabler-package icon-26px"></i></span>
+                                                </div>
+                                                <div
+                                                    class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                                    <div class="me-2">
+                                                        <h6 class="mb-1 fw-normal">@Mahan_Dev</h6>
+                                                        <small class="mb-0">1403/01/08 - 5 سرور ثبت شده</small>
+                                                    </div>
+                                                    <div class="user-progress">
+                                                        <span class="badge bg-label-success me-1">فعال</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="d-flex mb-6 align-items-center">
+                                                <div class="avatar flex-shrink-0 me-4">
+                                                    <span class="avatar-initial rounded bg-label-primary"><i
+                                                            class="icon-base ti tabler-package icon-26px"></i></span>
+                                                </div>
+                                                <div
+                                                    class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                                    <div class="me-2">
+                                                        <h6 class="mb-1 fw-normal">@SinaCraft</h6>
+                                                        <small class="mb-0">1403/01/08 - 1 سرور ثبت شده</small>
+                                                    </div>
+                                                    <div class="user-progress">
+                                                        <span class="badge bg-label-warning me-1">در انتظار بررسی</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="d-flex mb-6 align-items-center">
+                                                <div class="avatar flex-shrink-0 me-4">
+                                                    <span class="avatar-initial rounded bg-label-primary"><i
+                                                            class="icon-base ti tabler-package icon-26px"></i></span>
+                                                </div>
+                                                <div
+                                                    class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                                    <div class="me-2">
+                                                        <h6 class="mb-1 fw-normal">@Arshia_Admin</h6>
+                                                        <small class="mb-0">1403/01/07 - 12 سرور ثبت شده</small>
+                                                    </div>
+                                                    <div class="user-progress">
+                                                        <span class="badge bg-label-success me-1">فعال</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="d-flex mb-6 align-items-center">
+                                                <div class="avatar flex-shrink-0 me-4">
+                                                    <span class="avatar-initial rounded bg-label-primary"><i
+                                                            class="icon-base ti tabler-package icon-26px"></i></span>
+                                                </div>
+                                                <div
+                                                    class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                                    <div class="me-2">
+                                                        <h6 class="mb-1 fw-normal">@NightWalker</h6>
+                                                        <small class="mb-0">1403/01/07 - 2 سرور ثبت شده</small>
+                                                    </div>
+                                                    <div class="user-progress">
+                                                        <span class="badge bg-label-warning me-1">در انتظار بررسی</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="d-flex mb-6 align-items-center">
+                                                <div class="avatar flex-shrink-0 me-4">
+                                                    <span class="avatar-initial rounded bg-label-primary"><i
+                                                            class="icon-base ti tabler-package icon-26px"></i></span>
+                                                </div>
+                                                <div
+                                                    class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                                    <div class="me-2">
+                                                        <h6 class="mb-1 fw-normal">@Parsa_Pixel</h6>
+                                                        <small class="mb-0">1403/01/06 - 8 سرور ثبت شده</small>
+                                                    </div>
+                                                    <div class="user-progress">
+                                                        <span class="badge bg-label-success me-1">فعال</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/ Delivery Performance -->
+                        </div>
+                    </div>
+                    <!-- / Content -->
+
+                    <div class="content-backdrop fade"></div>
+                </div>
+                <!-- Content wrapper -->
+            </div>
+            <!-- / Layout page -->
+        </div>
+
+        <!-- Overlay -->
+        <div class="layout-overlay layout-menu-toggle"></div>
+
+        <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+        <div class="drag-target"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/theme.js  -->
+
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/node-waves/node-waves.js"></script>
+
+    <script src="../assets/vendor/libs/pickr/pickr.js"></script>
+
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="../assets/vendor/libs/hammer/hammer.js"></script>
+
+    <script src="../assets/vendor/libs/i18n/i18n.js"></script>
+
+    <script src="../assets/vendor/js/menu.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
+    <script src="../assets/vendor/libs/swiper/swiper.js"></script>
+    <script src="../assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+
+    <!-- Main JS -->
+
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script src="../assets/js/dashboards-analytics.js"></script>
+</body>
+
+</html>
